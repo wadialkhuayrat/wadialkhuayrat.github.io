@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WADI ALKHUAYRAT</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: WHITE;
+        }
+        header {
+            background-color: #4682B4; /* Set background color to LIGHT blue */
+            color: white; /* Keep text color white for contrast */
+            padding: 10px 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* 3D effect */
+            transform: translateZ(0); /* Create a 3D space */
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            margin: 10px;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .product {
+            border: 1px solid #4CAF50;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px;
+            width: 30%;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow for 3D effect */
+            overflow: hidden; /* Ensures content doesn't overflow the box */
+            transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+        }
+        .product:hover {
+            transform: translateY(-5px) scale(1.02); /* Lift and scale effect */
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
+        }
+        .product-image {
+            width: 30%, 50%; /* Makes the image responsive */
+            height: 200px; /* Sets a fixed height for the image */
+            object-fit: cover; /* Ensures the image covers the box without distortion */
+        }
+        .order-button {
+            background-color: #4CAF50; /* Green */
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+            transition: background-color 0.3s; /* Smooth background color change */
+        }
+        .order-button:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+        footer {
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 10px 0;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3); /* 3D effect */
+        }
+        @media (max-width: 768px) {
+            .product {
+                width: 80%;
+            }
+        }
+        video {
+            width: 100%; /* Makes the video responsive */
+            max-width: 600px; /* Limits the maximum width */
+            border-radius: 8px; /* Rounds the corners */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adds a shadow for a 3D effect */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="C:\Users\dell\OneDrive - WADI ALKHUAYRAT GENERAL TRADING W.L.L\Desktop\LOGO\LOGO N ong.png" alt="Wadi Al Khuayrat Logo" style="width: 100px; height: auto; display: block; margin: 0 auto;">
+    <h1>WADI AL KHUAYRAT</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Our Products</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+</header>
+
+<section id="home">
+    <h2>Welcome to Wadi Al Khuayrat!</h2>
+    <p>Your trusted trading company delivering quality products worldwide.</p>
+    <!-- Video Section -->
+    <video controls>
+        <source src="C:\Users\dell\OneDrive - WADI ALKHUAYRAT GENERAL TRADING W.L.L\Desktop\ADVERTISEMENT\AD WADI ALKHUAYRATPRODUCTS.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</section>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>We are a trading company, and we have our own brand of potato chips called Al Khaleej Chips. We deliver worldwide.</p>
+</section>
+
+<section id="services">
+    <h2>Our Products</h2>
+    <div class="products">
+        <div class="product">
+            <h3>Chips</h3>
+            <img src="C:\Users\dell\OneDrive - WADI ALKHUAYRAT GENERAL TRADING W.L.L\Desktop\AL KHALEEJ\BG\CHIPS !BG\Barbeque Flavor.png" alt="Al Khaleej Chips" class="product-image">
+            <p>Discover our delicious Al Khaleej Chips, available in various flavors.</p>
+            <button class="order-button">Order Now</button>
+        </div>
+        <div class="product">
+            <h3>Tissue</h3>
+            <img src="C:\Users\dell\OneDrive - WADI ALKHUAYRAT GENERAL TRADING W.L.L\Desktop\AL KHALEEJ\BG\TISSUE !BG\Dareen 200 x 10 x 50.png" alt="Tissue" class="product-image">
+            <p>High-quality tissues for everyday use.</p>
+            <button class="order-button">Order Now</button>
+        </div>
+        <div class="product">
+            <h3>Candy</h3>
+            <img src="C:\Users\dell\OneDrive - WADI ALKHUAYRAT GENERAL TRADING W.L.L\Desktop\AL KHALEEJ\BG\CC STICK !BG\CC STICK.png" alt="Candy" class="product-image">
+            <p>Sweet treats for all ages.</p>
+            <button class="order-button">Order Now</button>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions, feel free to reach out!</p>
+    <p>Email: <a href="mailto:wadialkhuayratbh@gmail.com">wadialkhuayratbh@gmail.com</a></p>
+    <p>Phone: <a href="tel:+97333231819">33231819</a></p>
+    <p>Follow us on <a href="https://www.instagram.com/wadi.alkhuayrat" target="_blank">Instagram</a></p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Wadi Al Khuayrat. All rights reserved.</p>
+</footer>
+
+<script>
+    // Smooth scroll for navigation links
+    const links = document.querySelectorAll('nav a');
+    links.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+</script>
+
+</body>
+</html>
